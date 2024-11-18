@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini YouTube</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Mini YouTube</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search videos...">
+      <button>Search</button>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <div class="main-content">
+
+    <!-- Video Player -->
+    <div class="video-player">
+      <video id="main-video" controls>
+        <!-- Default video to load -->
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">
+        <h2>Sample Video Title</h2>
+        <p>By Sample Channel</p>
+      </div>
+    </div>
+
+    <!-- Video Thumbnails / Video List -->
+    <div class="video-list">
+      <div class="video-item" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4', 'Sample Video Title 2')">
+        <img src="https://via.placeholder.com/150" alt="Video 1">
+        <div class="video-info">
+          <h3>Sample Video Title 2</h3>
+          <p>By Channel 1</p>
+        </div>
+      </div>
+      <div class="video-item" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4', 'Sample Video Title 3')">
+        <img src="https://via.placeholder.com/150" alt="Video 2">
+        <div class="video-info">
+          <h3>Sample Video Title 3</h3>
+          <p>By Channel 2</p>
+        </div>
+      </div>
+      <!-- Add more video items as needed -->
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
